@@ -9,6 +9,7 @@
     --color-orage: #fe7014;
     --color-darker:#030303;
     --color-lighter:#f4f4f4;
+    --color-thindarker:#1c1a1a71;
     --font-heading: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body{
@@ -17,17 +18,27 @@ body{
     color: var(--color-lighter);
 }
 /* Navbar */
+#navbar{
+    
+    background-color:rgb(7, 76, 76);
+}
 .container{
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem; 
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.container ul{
+    list-style: none; 
 }
 .container ul{
+    margin-top: 15px;
     display: flex;
-    list-style: none;  
-}
-.container ul li{
-    margin-right: 1rem;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 .container ul li a{
     text-decoration: none;
@@ -41,7 +52,7 @@ body{
     color: var(--color-orage);
 
 }
-.container button{
+.container .btn{
     background-color: var(--color-orage);
     color: var(--color-lighter);
     border: none;
@@ -150,7 +161,8 @@ body{
     .showcase .image img{
        width: 100%;
     }
-
-   
-   
+}
+.card{
+    color: var(--color-lighter);
+    background-color: var(--color-thindarker);
 }
