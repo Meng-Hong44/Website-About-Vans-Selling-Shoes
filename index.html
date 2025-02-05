@@ -26,25 +26,29 @@
 
 <body>
   <!-- navbar -->
-  <header>
-    <nav>
-      <div class="container menu">
+  <header class="w-100">
+    <nav class="w-100">
+      <div class="container menu" >
        <div class="logo-img"><img src="./img/vans-seeklogo.png" width="60px" alt="" /></div> 
         <ul class="nav-bar nav">
-          <div class="list">
+          <div class="list d-none d-lg-flex ">
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">About Us</a></li>
           </div>
         </ul>
-        <div class="icon-card-shop d-md-flex d-none">
-          <input type="search" placeholder="search..." class="ms-3 fs-6 rounded-0 ps-6">
-          <i class="fa-solid fa-magnifying-glass" id="search"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <i class="fa-solid fa-shop"></i>
+        <div>
+          <div class="icon-card-shop d-lg-flex align-items-lg-center d-none ">
+            <input type="search"  placeholder="Search..." class="input ms-3 fs-6  ps-6">
+            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-shop"></i>
+          </div>
+          <div class="toggle "><i class="fa-solid fa-bars text-white fs-2 d-flex d-lg-none " ></i></div>
+
         </div>
-        <div class="toggle"><i class="fa-solid fa-bars text-white fs-2" ></i></div>
+        
       </div>
     </nav>
   </header>
@@ -360,17 +364,16 @@
           
         </div>
         <div class="col-lg-6 ">
-          <div class="card bg-black">
+          <div class="card- ">
             <div class="card-body ">
-              <h5 class="card-title About">About Us</h5>
+              <h5 class="card-title About fs-3">About Us</h5>
               <h2 class="card-subtitle Provide">
                   We Provide <span class="high">High</span> Quality Shoes.
               </h2>
-              <p class="card-text Text-Card" >Lorem ipsum, dolor sit amet consectetur 
+              <p class="card-text text-light" >Lorem ipsum, dolor sit amet consectetur 
                 adipisicing elit. Facilis culpa dolor quibusdam neque perspiciatis 
                 atque error dolorum saepe sequi doloribus!	
-              </p>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur 
+                Lorem ipsum, dolor sit amet consectetur 
                   adipisicing elit. Facilis culpa dolor quibusdam neque perspiciatis 
                   atque error dolorum saepe sequi doloribus!	
               </p>
@@ -435,6 +438,77 @@
         </div>
     </div>
   </section>
+  <!-- end-customer-saying -->
+   <!-- start-footer -->
+   <section>
+    <footer>
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 p-5  ">
+              <div class="signup-email d-md-flex justify-content-between align-items-center d-md-grid">
+                <p class="title text-md-start text-center">Sign Up For <span>Updates</span><br>
+                  & Newslectter</p>
+                <div class="input-email d-flex justify-content-center align-items-center" >
+                  <input type="text" class="input-group-lgb w-75  ms-2 ps-2 " placeholder="Type Your Email">
+                  <button class="btn w-50 ">Subcribe Now</button>
+                </div>
+              </div>
+          </div>
+          <hr>
+          <div class="col-12"> 
+            <div class="row  p-5 g-3 links-style">
+              <div class="col-lg-3 col-md-6 col-12  ">
+                <div class=" d-lg-flex  d-flex flex-column justify-content-center  align-items-center">
+                  <img src="/img/vans-seeklogo.png" class="img-fluid w-50 pb-2" alt="">
+                  <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing  consectetur adipisicing  ipsum.</p>
+                  <div class="fs-4"> 
+                    <i class="fa-brands fa-facebook ps-2"></i>
+                    <i class="fa-brands fa-twitter p-2"></i>
+                    <i class="fa-brands fa-instagram pe-2"></i>
+                  </div>
+                </div>
+              
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 ">
+                <div class="d-grid justify-content-center gap-2 text-center text-sm-start">
+                  <h3 class="title">Find Product</h3>
+                  <a href="#">Brown Arnold</a>
+                  <a href="#">Chronograph Blue</a>
+                  <a href="#">Small Phones</a>
+                  <a href="#">Automatic Watch</a>
+                  <a href="#">Hair Straighteners</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-grid justify-content-center gap-2 text-center text-sm-start">
+                  <h3 class="title">Get Help</h3>
+                  <a href="#">About Us</a>
+                  <a href="#">Contact Us</a>
+                  <a href="#">Return Policy</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Payment Policy</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="d-grid justify-content-center gap-2 text-center text-sm-start ">
+                  <h3 class="title">About Us</h3>
+                  <a href="#">News</a>
+                  <a href="#">Serive</a>
+                  <a href="#">Our Policy</a>
+                  <a href="#">Customer Care</a>
+                  <a href="#">Faq's</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+          <p class="text-center pb-3">©
+            2025 CreativePeoples, All rights reserved.</p>
+      </div>
+    </footer>
+   </section>
+  <!-- end-footer -->
   <script src="index.js"></script>
 </body>
 
