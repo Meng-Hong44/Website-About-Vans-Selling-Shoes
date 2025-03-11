@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    /* outline: 1px solid lawngreen !important; */
 
 }
 :root{
@@ -282,12 +283,12 @@ nav{
 .product-detail-2 .discount img{
     filter: drop-shadow( 0 0 0.75rem rgba(255, 149, 36, 0.567));
     width: 460px;
-    transition: 0.1s ease;
+    transition: transform .2s;
     
 }
 .product-detail-2 .discount img:hover{
     filter: drop-shadow( 0 0 0.75rem rgba(243, 95, 32, 0.567));
-    width: 550px;
+    transform: scale(1.2);
 }
 #Explore{
     background-color: var(--color-orage);
@@ -339,11 +340,13 @@ nav{
 .About-customer img{
     margin-bottom: 3%;
     width: 30%;
+    transition: transform .2s; /* Animation */ 
 }
 
 .About-customer img:hover{
-    width: 35%;
-    transition: 0.3s ease-in;
+    /* width: 35%; */
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 5px rgb(225, 118, 11) );
 }
 .About-customer .stars{
     margin-bottom: 2%;
@@ -371,7 +374,6 @@ nav{
     
 }
 .signup-email .input-email .btn{
-    border-radius: none;
     height:100%;
     width: 100%;
 }
